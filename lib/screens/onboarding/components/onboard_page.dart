@@ -47,7 +47,7 @@ class _OnboardPageState extends State<OnboardPage>
     Provider.of<ColorProvider>(context).color = widget.pageModel.nextAccentColor;
     widget.pageController.nextPage(
       duration: Duration(
-        milliseconds: 100,
+        milliseconds: 500,
       ),
       curve: Curves.fastLinearToSlowEaseIn,
     );
